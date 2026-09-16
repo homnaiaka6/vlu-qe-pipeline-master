@@ -1,5 +1,13 @@
-const login = require("./auth");
-
-test("valid login", () => {
-    expect(login("admin", "123")).toBe(true);
-});
+{
+  "name": "vlu-qe-walking-skeleton",
+  "version": "1.0.0",
+  "description": "Login system with Smoke Test and Regression Test",
+  "main": "auth.js",
+  "scripts": {
+    "test:smoke": "jest auth.smoke.test.js",
+    "test:regression": "jest auth.regression.test.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
